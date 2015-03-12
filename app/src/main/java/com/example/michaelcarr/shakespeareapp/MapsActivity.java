@@ -3,9 +3,12 @@ package com.example.michaelcarr.shakespeareapp;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity {
@@ -60,7 +63,13 @@ public class MapsActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(59.9583, 1.0802)).title("Lovely marker"));
+        mMap.setMyLocationEnabled(true);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(53.959965, -1.087298), 14.0f));
+        Sites sites = Sites.get(this);
+        for(Site current : sites.getAllSites()){
+            Marker m = mMap.addMarker(new MarkerOptions().position(current.getLatLng()).title(current.getName()));
+            sites.setMarkerForSite(m,current);
+        }
     }
+
 }

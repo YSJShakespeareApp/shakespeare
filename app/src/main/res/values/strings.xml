@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">ShakespeareApp</string>
+    <string name="app_name">Mapbeth</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="festival_name">York International Shakespeare Festival</string>
+    <string name ="app_info">An app with incorporated map to guide you around the Shakespeare related locations in York, along with information and images of the sites. </string>
+    <string-array name="site_information">
+        <item>History of Richard III</item>
+    <item>
+        Richard III was the last Plantagenet King of England, however he only ruled for a short period of time (1483 – 1485). Before becoming King Richard had already had strong connections to the north, however during his reign Richard concluded a truce that he had with Scotland in order to reduce his commitment to the North. Throughout his reign he faced many challenges to his place on the throne and resentment towards him began to grow and grow. Richard died in 1485 while fighting to keep his throne at the Battle of Bosworth.
+    </item>
+
+    </string-array>
 </resources>
