@@ -1,7 +1,10 @@
 package com.example.michaelcarr.shakespeareapp;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -57,9 +60,6 @@ public class MapsActivity extends FragmentActivity {
     }
 
     /**
-     * This is where we can add markers or lines, add listeners or move the camera. In this case, we
-     * just add a marker near Africa.
-     * <p/>
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
@@ -70,6 +70,34 @@ public class MapsActivity extends FragmentActivity {
             Marker m = mMap.addMarker(new MarkerOptions().position(current.getLatLng()).title(current.getName()));
             sites.setMarkerForSite(m,current);
         }
+
+        //Set the site to show when the InfoWindow is clicked
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                //Intent intent = new Intent(MapsActivity.this, SiteActivity.class);
+                //startActivity(intent);
+            }
+        });
+
+
+        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+            @Override
+            public View getInfoWindow(Marker marker) {
+                return null;
+            }
+
+            @Override
+            //Set the info window to the name of the site selected and the icon
+            public View getInfoContents(Marker marker) {
+                View v = getLayoutInflater().inflate(R.layout.infowindow_layout, null);
+                Site selected = (Site) Sites.get(MapsActivity.this).getSite(marker);
+                TextView markerLabel = (TextView) v.findViewById(R.id.marker_label);
+                markerLabel.setText(selected.getName());
+                return v;
+            }
+        });
+
     }
 
 }
