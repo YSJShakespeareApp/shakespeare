@@ -15,7 +15,8 @@ public class Site implements Serializable {
     private int ID;
     private String name;
     private LatLng latlng;
-    private ArrayList<String> text;
+    private String history;
+    private String shakespeare;
     private ArrayList<ImageView> images;
 
 
@@ -23,16 +24,11 @@ public class Site implements Serializable {
         this.ID = ID;
         this.name = name;
         this.latlng = latlng;
-        this.text = new ArrayList<String>();
         this.images = new ArrayList<ImageView>();
     }
 
-    public void addInfo(String info){
-        this.text.add(info);
-    }
+    public Site(){
 
-    public void addImage(ImageView image){
-        this.images.add(image);
     }
 
     public int getID(){
@@ -47,19 +43,27 @@ public class Site implements Serializable {
         return this.latlng;
     }
 
-    public ArrayList<String> getAllInfo(){
-        return this.text;
+    public void setName(String name){
+        this.name = name;
     }
 
-    public ArrayList<ImageView> getAllImages(){
-        return this.images;
+    public void setLatLng(LatLng latlng){
+        this.latlng = latlng;
+    }
+    public void setHistory(String history) {
+        this.history = history;
     }
 
-    public String getInfo(int pos){
-        return this.text.get(pos);
+    public void setShakespeare(String shakespeare) {
+        this.shakespeare = shakespeare;
     }
 
-    public ImageView getImage(int pos){
-        return this.images.get(pos);
+    public String getHistory() {
+        return history;
     }
+
+    public String getShakespeare() {
+        return shakespeare;
+    }
+
 }

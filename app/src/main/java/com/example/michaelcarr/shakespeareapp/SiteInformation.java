@@ -13,10 +13,14 @@ public class SiteInformation extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_siteinformation);
-        TextView titleText = (TextView) findViewById(R.id.title);
-        titleText.setText(getIntent().getStringExtra("Name"));
-        TextView infoText = (TextView) findViewById(R.id.info);
-        infoText.setText(getIntent().getStringExtra("Info"));
+
+        TextView name = (TextView)findViewById(R.id.title);
+        name.setText(getIntent().getStringExtra("name"));
+
+        TextView info = (TextView)findViewById(R.id.info);
+        info.setText(getIntent().getStringExtra("history"));
+        info.append(getIntent().getStringExtra("shakespeare"));
+
 
     }
 

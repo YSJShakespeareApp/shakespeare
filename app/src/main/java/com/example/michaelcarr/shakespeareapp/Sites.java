@@ -5,14 +5,24 @@ package com.example.michaelcarr.shakespeareapp;
  */
 
 import android.content.Context;
+import android.util.Log;
+import android.util.Xml;
 
+import com.google.android.gms.analytics.ecommerce.Product;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
@@ -25,12 +35,72 @@ public class Sites {
         markers = new LinkedHashMap<Marker, Site>();
 
         /* XXX: load this in from XML/whatever */
-        Site s = new Site(1, "Monk Bar - Richard III", new LatLng(53.96234, -1.07935));
-        s.addInfo(context.getApplicationContext().getResources().getStringArray(R.array.site_information)[0]);
-        s.addInfo(context.getApplicationContext().getResources().getStringArray(R.array.site_information)[1]);
-        //s.addImage();
-        list.add(s);
+
+
+        XmlPullParserFactory pullParserFactory;
+        try {
+            pullParserFactory = XmlPullParserFactory.newInstance();
+            XmlPullParser parser = pullParserFactory.newPullParser();
+
+            InputStream in_s = context.getAssets().open("sites.xml");
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+            parser.setInput(in_s, null);
+
+            parseXML(parser);
+
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+        private void parseXML(XmlPullParser parser) throws XmlPullParserException,IOException
+        {
+            list = null;
+            int eventType = parser.getEventType();
+            Site currentSite = null;
+            double templat = 0;
+            double templng = 0;
+            while (eventType != XmlPullParser.END_DOCUMENT){
+                String tag = null;
+                switch (eventType){
+                    case XmlPullParser.START_DOCUMENT:
+                        list = new ArrayList();
+                        break;
+                    case XmlPullParser.START_TAG:
+                        tag = parser.getName();
+                        if (tag.equals("site")){
+                            currentSite = new Site();
+                        } else if (currentSite != null){
+                            if (tag.equals("name")){
+                                currentSite.setName(parser.nextText());
+                                Log.e("Test", "got site " + currentSite.getName());
+                            } else if (tag.equals("lat")) {
+                                templat = Double.valueOf(parser.nextText());
+                            }
+                            else if (tag.equals("lng")) {
+                                templng = Double.valueOf(parser.nextText());
+                                currentSite.setLatLng(new LatLng(templat,templng));
+                            }
+                            else if (tag.equals("history")){
+                                currentSite.setHistory(parser.nextText());
+                            } else if (tag.equals("shakespeare")) {
+                                currentSite.setShakespeare(parser.nextText());
+                            }
+                        }
+                        break;
+                    case XmlPullParser.END_TAG:
+                        tag = parser.getName();
+                        if (tag.equalsIgnoreCase("site") && currentSite != null){
+                            list.add(currentSite);
+                        }
+                }
+                eventType = parser.next();
+            }
+
+        }
+
+
 
     void setMarkerForSite(Marker m, Site s) {
         markers.put(m, s);

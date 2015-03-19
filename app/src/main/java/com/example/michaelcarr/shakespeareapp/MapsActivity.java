@@ -3,6 +3,7 @@ package com.example.michaelcarr.shakespeareapp;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -66,7 +67,12 @@ public class MapsActivity extends FragmentActivity {
         mMap.setMyLocationEnabled(true);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(53.959965, -1.087298), 14.0f));
         Sites sites = Sites.get(this);
+
         for(Site current : sites.getAllSites()){
+            Log.e("Get LatLng", ""+ current.getLatLng());
+            Log.e("Get Name",""+current.getName());
+
+
             Marker m = mMap.addMarker(new MarkerOptions().position(current.getLatLng()).title(current.getName()));
             sites.setMarkerForSite(m,current);
         }
@@ -75,8 +81,13 @@ public class MapsActivity extends FragmentActivity {
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
-                //Intent intent = new Intent(MapsActivity.this, SiteActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MapsActivity.this, SiteInformation.class);
+                Site selected = Sites.get(MapsActivity.this).getSite(marker);
+                intent.putExtra("name", selected.getName());
+                intent.putExtra("history", selected.getHistory());
+                intent.putExtra("shakespeare",selected.getShakespeare());
+
+                startActivity(intent);
             }
         });
 
