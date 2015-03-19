@@ -18,14 +18,20 @@
         android:fontFamily="sans-serif-light"
         android:id="@+id/title" />
 
-    <TextView
-        android:layout_below="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:text="Information goes here"
-        android:fontFamily="sans-serif-light"
-        android:textAlignment="center"
-        android:id="@+id/info" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title">
+
+        <TextView
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Information goes here"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:id="@+id/info" />
+    </ScrollView>
 
 </RelativeLayout>
