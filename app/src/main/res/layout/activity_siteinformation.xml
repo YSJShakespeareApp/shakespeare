@@ -16,20 +16,41 @@
         android:fontFamily="sans-serif-light"
         android:id="@+id/title" />
 
+
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title">
 
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"    >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageHistory"/>
+
         <TextView
-            android:layout_below="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            android:text="Information goes here"
             android:fontFamily="sans-serif-light"
             android:textAlignment="center"
-            android:id="@+id/info" />
+            android:id="@+id/history" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/imageShakespeare"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:id="@+id/shakespeare" /></LinearLayout>
     </ScrollView>
 
 

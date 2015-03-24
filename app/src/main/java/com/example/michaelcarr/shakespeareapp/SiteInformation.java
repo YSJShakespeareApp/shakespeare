@@ -2,6 +2,7 @@ package com.example.michaelcarr.shakespeareapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -17,11 +18,17 @@ public class SiteInformation extends Activity {
         TextView name = (TextView)findViewById(R.id.title);
         name.setText(getIntent().getStringExtra("name"));
 
-        TextView info = (TextView)findViewById(R.id.info);
-        info.setText(getIntent().getStringExtra("history"));
-        info.append(getIntent().getStringExtra("shakespeare"));
+        TextView history = (TextView)findViewById(R.id.history);
+        history.setText(getIntent().getStringExtra("history"));
+        TextView shakespeare = (TextView)findViewById(R.id.shakespeare);
+        shakespeare.setText(getIntent().getStringExtra("shakespeare"));
+
+        ImageView imageHistory = (ImageView)findViewById(R.id.imageHistory);
+        imageHistory.setImageDrawable(getResources().getDrawable(R.drawable.richardhistory));
 
 
+        ImageView imageShakespeare = (ImageView)findViewById(R.id.imageShakespeare);
+        imageShakespeare.setImageDrawable(getResources().getDrawable(R.drawable.richardshakespeare));
     }
 
 
