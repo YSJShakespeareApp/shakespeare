@@ -2,13 +2,31 @@
 
 <sites>
 <site>
-<name>Richard III -Monk Bar </name>
+<name>Richard III - Monk Bar </name>
 <lat>53.96234</lat>
 <lng>-1.07935</lng>
-<history> Richard III was the last Plantagenet King of England, however he only ruled for a short period of time (1483 – 1485). Before becoming King Richard had already had strong connections to the north, however during his reign Richard concluded a truce that he had with Scotland in order to reduce his commitment to the North. Throughout his reign he faced many challenges to his place on the throne and resentment towards him began to grow and grow. Richard died in 1485 while fighting to keep his throne at the Battle of Bosworth. </history>
+<history>Richard III was the last Plantagenet King of England, however he only ruled for a short period of time (1483 – 1485). Before becoming King Richard had already had strong connections to the north, however during his reign Richard concluded a truce that he had with Scotland in order to reduce his commitment to the North. Throughout his reign he faced many challenges to his place on the throne and resentment towards him began to grow and grow. Richard died in 1485 while fighting to keep his throne at the Battle of Bosworth.</history>
+<historyImage>richardhistory</historyImage>
 <shakespeare>Shakespeare’s physical representation of Richard contrasts what we would expect of a protagonist, especially one depicting the reign of a former King of England. The Richard that Shakespeare presents his audience with is that of a “Deform’d, unfinish’d” man, a man who is physically challenged and straight away portrays a sense of evil about him.</shakespeare>
+<shakespeareImage>richardshakespeare</shakespeareImage>
 </site>
-
+<site>
+<name>Siward - Earl of Northumberia </name>
+<lat>53.963319</lat>
+<lng>-1.087064</lng>
+<history>He was much renowned for his skill in battle, so much so that the Danes called him DIGERA, or 'the great'. He was sent by Edward the Confessor to Scotland with a force of 10,000 men to aid Malcolm in his fight against Macbeth. Siward fell ill at York in 1055, and died soon after. He founded the church of St Olave's in York, and owned the Galmanho estate where St Mary's Abbey sits, and where he was buried. </history>
+<historyImage>siwardhistory</historyImage>
+<shakespeare>Siward is only a minor character in Macbeth, but he is one of the few survivors at the end of the play. Malcolm echoes what is known about Siward, calling him “An older and a better soldier none/That Christendom gives out.” As a minor character, the audience does not expect to learn a great deal about him, but the fact that Siward is still alive at the end of play shows that he must be worthy of the praise put on him.</shakespeare>
+<shakespeareImage>siwardshakespeare</shakespeareImage>
+</site>
+<site>
+<name>Richard Scrope </name>
+<lat>53.962342</lat>
+<lng>-1.081941</lng>
+<history>Richard le Scrope was Archbishop of York 1398-1405. His rebellion against Henry IV in 1405 had significant political and cultural impact in York. He was joined by Thomas Mowbray and Thomas Lord Bardolf, but Scrope was the leading figure. In Spring 1405, Scrope posted proclamations around York denouncing the Lancastrian regime, and charged Henry with bad government and unbearable taxes imposed on the poor, amongst other crimes. The authority Scrope held in York meant that northern lords joined him without much protest. However, the cause was uncoordinated, and the three men were arrested by Westmorland in 1405. The archbishop was stripped of his titles and executed under York's city walls, along with his conspirators.</history>
+<historyImage>scropehistory</historyImage>
+<shakespeare>Richard Scrope is presented to the audience as truly believing that Henry IV is not a good king and should be forced from the throne. However, despite the political acumen he must have had, he still gives up his plans to Westmorland, which leads to his arrest in Act IV of Henry IV, Part II. Prince John accuses him of “misuse the reverence of your place”. He is presented as an antagonist, despite the relatively minor role he plays.</shakespeare>
+</site>
 
 
 

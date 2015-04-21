@@ -1,7 +1,6 @@
 package com.example.michaelcarr.shakespeareapp;
 
-import android.media.Image;
-import android.widget.ImageView;
+import android.util.Log;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -17,14 +16,14 @@ public class Site implements Serializable {
     private LatLng latlng;
     private String history;
     private String shakespeare;
-    private ArrayList<ImageView> images;
+    private ArrayList<String> images = new ArrayList<String>();
 
 
     public Site (int ID,String name, LatLng latlng){
         this.ID = ID;
         this.name = name;
         this.latlng = latlng;
-        this.images = new ArrayList<ImageView>();
+        this.images = new ArrayList<String>();
     }
 
     public Site(){
@@ -53,17 +52,26 @@ public class Site implements Serializable {
     public void setHistory(String history) {
         this.history = history;
     }
-
     public void setShakespeare(String shakespeare) {
         this.shakespeare = shakespeare;
     }
-
     public String getHistory() {
         return history;
     }
-
     public String getShakespeare() {
         return shakespeare;
     }
+    public String getImage(int image){
+        return images.get(image);
+    }
+    public int getSize(){
+        return images.size();
+    }
+    public String toString(){ return this.name; }
+    public void addImage(String image){
+        Log.e("Image", "" + image);
+        images.add(image);
+    }
+
 
 }

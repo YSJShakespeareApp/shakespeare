@@ -5,17 +5,7 @@ package com.example.michaelcarr.shakespeareapp;
  */
 
 import android.content.Context;
-import android.util.Log;
-import android.util.Xml;
 
-import com.google.android.gms.analytics.ecommerce.Product;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 
@@ -23,8 +13,9 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.LinkedHashMap;
 
 
@@ -74,18 +65,21 @@ public class Sites {
                         } else if (currentSite != null){
                             if (tag.equals("name")){
                                 currentSite.setName(parser.nextText());
-                                Log.e("Test", "got site " + currentSite.getName());
                             } else if (tag.equals("lat")) {
                                 templat = Double.valueOf(parser.nextText());
-                            }
-                            else if (tag.equals("lng")) {
+                            } else if (tag.equals("lng")) {
                                 templng = Double.valueOf(parser.nextText());
                                 currentSite.setLatLng(new LatLng(templat,templng));
-                            }
-                            else if (tag.equals("history")){
+                            } else if (tag.equals("history")){
                                 currentSite.setHistory(parser.nextText());
-                            } else if (tag.equals("shakespeare")) {
+                            } else if (tag.equals("historyImage")){
+                                currentSite.addImage(parser.nextText());
+                            }
+                            else if (tag.equals("shakespeare")) {
                                 currentSite.setShakespeare(parser.nextText());
+                            }
+                            else if (tag.equals("shakespeareImage")){
+                                currentSite.addImage(parser.nextText());
                             }
                         }
                         break;

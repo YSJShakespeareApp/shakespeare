@@ -9,7 +9,8 @@
         android:layout_width="fill_parent"
         android:layout_height="125dp"
         android:layout_gravity="center"
-        android:src="@drawable/festival" />
+        android:src="@drawable/festival"
+        android:layout_weight="2"/>
 
     <TextView
         android:id="@+id/appname"
@@ -18,15 +19,10 @@
         android:textColor="#000000"
         android:textSize="70sp"
         android:typeface="sans"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="50dp"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
 
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
 
         <TextView
             android:id="@+id/app_info"
@@ -36,17 +32,17 @@
             android:gravity="center"
             android:text="@string/app_info"
             android:textSize="20sp"
-            android:layout_alignParentTop="true"/>
+            android:layout_weight="3"
+   />
 
         <Button
             style="@style/CustomButton"
             android:id="@+id/enterButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+
             android:text="Touch here to enter the app"
             android:typeface="sans" />
-    </RelativeLayout>
 
 </LinearLayout>
