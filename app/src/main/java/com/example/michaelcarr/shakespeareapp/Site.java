@@ -1,7 +1,5 @@
 package com.example.michaelcarr.shakespeareapp;
 
-import android.util.Log;
-
 import com.google.android.gms.maps.model.LatLng;
 
 import java.io.Serializable;
@@ -69,7 +67,6 @@ public class Site implements Serializable {
     }
     public String toString(){ return this.name; }
     public void addImage(String image){
-        Log.e("Image", "" + image);
         images.add(image);
     }
 
