@@ -23,8 +23,6 @@ public class SiteInformation extends Activity {
 
         Site selected = Sites.get(SiteInformation.this).getAllSites().get(getIntent().getIntExtra("index",0));
 
-
-
         TextView name = (TextView)findViewById(R.id.title);
         name.setText(selected.getName());
 

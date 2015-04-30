@@ -2,7 +2,7 @@
 
 <sites>
 <site>
-<name>Richard III - Monk Bar </name>
+<name>Monk Bar</name>
 <lat>53.96234</lat>
 <lng>-1.07935</lng>
 <history>Richard III was the last Plantagenet King of England, however he only ruled for a short period of time (1483 – 1485). Before becoming King Richard had already had strong connections to the north, however during his reign Richard concluded a truce that he had with Scotland in order to reduce his commitment to the North. Throughout his reign he faced many challenges to his place on the throne and resentment towards him began to grow and grow. Richard died in 1485 while fighting to keep his throne at the Battle of Bosworth.</history>
@@ -11,7 +11,7 @@
 <shakespeareImage>richardshakespeare</shakespeareImage>
 </site>
 <site>
-<name>Siward - Earl of Northumbria </name>
+<name>St Olave's Church</name>
 <lat>53.963319</lat>
 <lng>-1.087064</lng>
 <history>He was much renowned for his skill in battle, so much so that the Danes called him DIGERA, or 'the great'. He was sent by Edward the Confessor to Scotland with a force of 10,000 men to aid Malcolm in his fight against Macbeth. Siward fell ill at York in 1055, and died soon after. He founded the church of St Olave's in York, and owned the Galmanho estate where St Mary's Abbey sits, and where he was buried. </history>
@@ -20,29 +20,30 @@
 <shakespeareImage>siwardshakespeare</shakespeareImage>
 </site>
 <site>
-<name>Richard Scrope </name>
-<lat>53.962342</lat>
-<lng>-1.081941</lng>
+<name>Bishop's Palace</name>
+<lat>53.923119</lat>
+<lng>-1.092121</lng>
 <history>Richard le Scrope was Archbishop of York 1398-1405. His rebellion against Henry IV in 1405 had significant political and cultural impact in York. He was joined by Thomas Mowbray and Thomas Lord Bardolf, but Scrope was the leading figure. In Spring 1405, Scrope posted proclamations around York denouncing the Lancastrian regime, and charged Henry with bad government and unbearable taxes imposed on the poor, amongst other crimes. The authority Scrope held in York meant that northern lords joined him without much protest. However, the cause was uncoordinated, and the three men were arrested by Westmorland in 1405. The archbishop was stripped of his titles and executed under York's city walls, along with his conspirators.</history>
-<historyImage>scropehistory</historyImage>
+<historyImage>scropeshakespeare</historyImage>
 <shakespeare>Richard Scrope is presented to the audience as truly believing that Henry IV is not a good king and should be forced from the throne. However, despite the political acumen he must have had, he still gives up his plans to Westmorland, which leads to his arrest in Act IV of Henry IV, Part II. Prince John accuses him of “misuse the reverence of your place”. He is presented as an antagonist, despite the relatively minor role he plays.</shakespeare>
+<shakespeareImage>bishopspalace</shakespeareImage>
 </site>
+<site>
+<name>St Mary's Abbey</name>
+<lat>53.9614</lat>
+<lng>-1.0881</lng>
+<history>St Mary’s Abbey replaced St Olave’s Church which had stood since 1080.The Abbey housed around 40 to 50 monks under an Abbot. One of the Abbot’s was recorded in the Doomsday Book as being one of York’s leading landowners. Many Abbot’s were indulgent, and some were mentioned in the Ballard’s of Robin Hood as Robin’s arch enemy. St Mary’s Abbey was a rich and large establishment; in 1539 it was worth around £2000 (equal to £1,170,000 in 2015) and in the reign of Henry VIII was surrendered to the crown and destroyed.</history>
+<historyImage>stmaryshistory</historyImage>
+<shakespeare>Some critics have argued that St Mary’s Abbey shows many similarities to the tomb in which Romeo and Juliet die in Shakespeare’s famous play. The abbey suggests a sense of elegance but also could be used to suggest something more dark and eerie. This is very similar to the atmosphere which Shakespeare creates in this pivotal and emotional scene of the play. </shakespeare>
+</site>
+<site>
+<name>York Minster</name>
+<lat>53.9619</lat>
+<lng>-1.0819</lng>
+<history>The first Church on the current site was built in 627 and the first Archbishop of York was acknowledged by the Pope in 732.The Gothic style building seen today has stood since 1472. York Minster’s full title is The Cathedral and Metro political Church of St Peter in York.During the English Civil War the Minster was saved by Thomas Fairfax, a commander of Thomas Cromwell’s who lived in Yorkshire.</history>
+<historyImage>minsterhistory</historyImage>
+<shakespeare>Although we know very little of Shakespeare’s personal life and what religion (if any) he practiced, we do know that religion played an important role in many of his plays, for example the character of the Friar in Romeo and Juliet. Also in Macbeth, the idea of religion and right and wrong is suggested throughout. It has been argued that the characters of the witches are Shakespeare’s way of portraying how our actions are being judged by a higher being.</shakespeare>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+</site>
 </sites>
 
