@@ -5,6 +5,7 @@
 <name>Monk Bar</name>
 <lat>53.96234</lat>
 <lng>-1.07935</lng>
+
 <history>Richard III was the last Plantagenet King of England, however he only ruled for a short period of time (1483 – 1485). Before becoming King Richard had already had strong connections to the north, however during his reign Richard concluded a truce that he had with Scotland in order to reduce his commitment to the North. Throughout his reign he faced many challenges to his place on the throne and resentment towards him began to grow and grow. Richard died in 1485 while fighting to keep his throne at the Battle of Bosworth.</history>
 <historyImage>richardhistory</historyImage>
 <shakespeare>Shakespeare’s physical representation of Richard contrasts what we would expect of a protagonist, especially one depicting the reign of a former King of England. The Richard that Shakespeare presents his audience with is that of a “Deform’d, unfinish’d” man, a man who is physically challenged and straight away portrays a sense of evil about him.</shakespeare>
@@ -43,7 +44,23 @@
 <history>The first Church on the current site was built in 627 and the first Archbishop of York was acknowledged by the Pope in 732.The Gothic style building seen today has stood since 1472. York Minster’s full title is The Cathedral and Metro political Church of St Peter in York.During the English Civil War the Minster was saved by Thomas Fairfax, a commander of Thomas Cromwell’s who lived in Yorkshire.</history>
 <historyImage>minsterhistory</historyImage>
 <shakespeare>Although we know very little of Shakespeare’s personal life and what religion (if any) he practiced, we do know that religion played an important role in many of his plays, for example the character of the Friar in Romeo and Juliet. Also in Macbeth, the idea of religion and right and wrong is suggested throughout. It has been argued that the characters of the witches are Shakespeare’s way of portraying how our actions are being judged by a higher being.</shakespeare>
-
+</site>
+<site>
+<name>City Walls</name>
+<lat>53.9619</lat>
+<lng>-1.0819</lng>
+<history>The York City Walls have protected the city since the Romans first built a stronghold and called it Eboracum - although there is no definitive date to when the first walls were built. There is evidence that Edward I had them rebuilt to better protect against any potential Scottish invasions. The walls were badly damaged in a siege of 1644, and the repairs took a long time. They were finally completed in 1700, and the walls opened to the public. The walls are one of only two remaining of this scale in England.</history>
+<historyImage>citywalls</historyImage>
+<shakespeare>Some critics have said that in a lot of scenery described by Shakespeare in his plays are inspired or resemble historic landmarks such as the City Walls of York. For example in Shakespeare’s play “As You Like It” the idea of the separation between the urban and the pastoral can be links to the ways in which the Walls surround York, and form a separation between York and the rest of the country.</shakespeare>
+</site>
+<site>
+<name>Barley Hall</name>
+<lat>53.959801</lat>
+<lng>-1.078946</lng>
+<history>Barley Hall was first built in the 1360's, as a priory for the Augustinian monastery near Wakefield. It was used as a hostel until the fifteenth century, when hard times forced it to be leased to private tenants.
+In 1460, it was rented to the Master of the Kings Mint in York, and then the Lord Mayor of York in 1468. However, by the 1600's, the Hall was a number of smaller dwellings - which is how the passage from Stonegate to Swinegate came to be. It was opened to the public in 1993, after being restored to its former glory.</history>
+<historyImage>barleyhall</historyImage>
+<shakespeare>Buildings such as Barley Hall have been argued to resemble houses of wealthy character in many Shakespeare plays, for example the home of the Capulet’s in Romeo and Juliet. </shakespeare>
 </site>
 </sites>
 

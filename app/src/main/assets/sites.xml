@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <sites>
+
 <site>
 <name>Monk Bar</name>
 <lat>53.96234</lat>
@@ -10,6 +11,7 @@
 <shakespeare>Shakespeare’s physical representation of Richard contrasts what we would expect of a protagonist, especially one depicting the reign of a former King of England. The Richard that Shakespeare presents his audience with is that of a “Deform’d, unfinish’d” man, a man who is physically challenged and straight away portrays a sense of evil about him.</shakespeare>
 <shakespeareImage>richardshakespeare</shakespeareImage>
 </site>
+
 <site>
 <name>St Olave's Church</name>
 <lat>53.963319</lat>
@@ -19,6 +21,7 @@
 <shakespeare>Siward is only a minor character in Macbeth, but he is one of the few survivors at the end of the play. Malcolm echoes what is known about Siward, calling him “An older and a better soldier none/That Christendom gives out.” As a minor character, the audience does not expect to learn a great deal about him, but the fact that Siward is still alive at the end of play shows that he must be worthy of the praise put on him.</shakespeare>
 <shakespeareImage>siwardshakespeare</shakespeareImage>
 </site>
+
 <site>
 <name>Bishop's Palace</name>
 <lat>53.923119</lat>
@@ -28,6 +31,7 @@
 <shakespeare>Richard Scrope is presented to the audience as truly believing that Henry IV is not a good king and should be forced from the throne. However, despite the political acumen he must have had, he still gives up his plans to Westmorland, which leads to his arrest in Act IV of Henry IV, Part II. Prince John accuses him of “misuse the reverence of your place”. He is presented as an antagonist, despite the relatively minor role he plays.</shakespeare>
 <shakespeareImage>bishopspalace</shakespeareImage>
 </site>
+
 <site>
 <name>St Mary's Abbey</name>
 <lat>53.9614</lat>
@@ -36,6 +40,7 @@
 <historyImage>stmaryshistory</historyImage>
 <shakespeare>Some critics have argued that St Mary’s Abbey shows many similarities to the tomb in which Romeo and Juliet die in Shakespeare’s famous play. The abbey suggests a sense of elegance but also could be used to suggest something more dark and eerie. This is very similar to the atmosphere which Shakespeare creates in this pivotal and emotional scene of the play. </shakespeare>
 </site>
+
 <site>
 <name>York Minster</name>
 <lat>53.9619</lat>
@@ -44,5 +49,24 @@
 <historyImage>minsterhistory</historyImage>
 <shakespeare>Although we know very little of Shakespeare’s personal life and what religion (if any) he practiced, we do know that religion played an important role in many of his plays, for example the character of the Friar in Romeo and Juliet. Also in Macbeth, the idea of religion and right and wrong is suggested throughout. It has been argued that the characters of the witches are Shakespeare’s way of portraying how our actions are being judged by a higher being.</shakespeare>
 </site>
+
+<site>
+<name>City Walls</name>
+<lat>53.9619</lat>
+<lng>-1.0819</lng>
+<history>The York City Walls have protected the city since the Romans first built a stronghold and called it Eboracum - although there is no definitive date to when the first walls were built. There is evidence that Edward I had them rebuilt to better protect against any potential Scottish invasions. The walls were badly damaged in a siege of 1644, and the repairs took a long time. They were finally completed in 1700, and the walls opened to the public. The walls are one of only two remaining of this scale in England.</history>
+<historyImage>citywalls</historyImage>
+<shakespeare>Some critics have said that in a lot of scenery described by Shakespeare in his plays are inspired or resemble historic landmarks such as the City Walls of York. For example in Shakespeare’s play “As You Like It” the idea of the separation between the urban and the pastoral can be links to the ways in which the Walls surround York, and form a separation between York and the rest of the country.</shakespeare>
+</site>
+
+<site>
+<name>Barley Hall</name>
+<lat>53.959801</lat>
+<lng>-1.078946</lng>
+<history>Barley Hall was first built in the 1360's, as a priory for the Augustinian monastery near Wakefield. It was used as a hostel until the fifteenth century, when hard times forced it to be leased to private tenants. In 1460, it was rented to the Master of the Kings Mint in York, and then the Lord Mayor of York in 1468. However, by the 1600's, the Hall was a number of smaller dwellings - which is how the passage from Stonegate to Swinegate came to be. It was opened to the public in 1993, after being restored to its former glory.</history>
+<historyImage>barleyhall</historyImage>
+<shakespeare>Buildings such as Barley Hall have been argued to resemble houses of wealthy character in many Shakespeare plays, for example the home of the Capulet’s in Romeo and Juliet. </shakespeare>
+</site>
+
 </sites>
 
