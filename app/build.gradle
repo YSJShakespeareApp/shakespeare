@@ -1,19 +1,28 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'shakespeare'
+            keyPassword 'shakespeare'
+            storeFile file('/home/michael.carr/Android Studio/shakespeare/keystore.jks')
+            storePassword 'shakespeare'
+        }
+    }
     compileSdkVersion 21
     buildToolsVersion "22.0.0"
     defaultConfig {
         applicationId 'ysj.shakespeare'
         minSdkVersion 17
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.3"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     productFlavors {
